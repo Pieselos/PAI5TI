@@ -1,0 +1,36 @@
+table,td,tr,th{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+header{
+    width: 100%;
+}
+nav{
+    width: 20%;
+    float: left;
+}
+main{
+    width: 50%;
+    float: left;
+    height: 10cm;
+}
+section{
+    width: 30%;
+    float: left;
+}
+footer{
+    float: left;
+    
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.logo{
+    height: 150px;
+    width: 800px;
+}
