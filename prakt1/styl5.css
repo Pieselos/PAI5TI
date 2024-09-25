@@ -1,0 +1,32 @@
+*{
+    font-family: Tahoma;
+}
+header{
+    display: flex;
+}
+header section{
+    background-color: #7DA453;
+    color: white;
+    height: 120px;
+}
+#headerBlok1{
+    width: 40%;
+}
+#headerBlok2{
+    width: 40%;
+}
+#headerBlok3{
+    width: 20%;
+}
+.blokKalendarz{
+    background-color: #AED581;
+    width: 200px;
+    height: 100px;
+    margin: 7px;
+    border: 1px solid #7DA453;
+}
+.logo{
+    /* Nie ma gimpa :/ */
+    height: 120px;
+    width: 120px;
+}
