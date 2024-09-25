@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form accept="new.php" method="post">
-        <label><input type="text" placeholder="istniejący nick z CS"> Nick</label>
-        <label><input></label>
-        <label><input></label>
-        <label><input></label>
+    <form action="new.php" method="post">
+        <label><input type="text" placeholder="istniejący nick z CS" name="nick"> Nick</label>
+        <label><input type="password" name="haslo">Hasło</label>
+        <label><input type="password" name="powtHaslo">Powtórz hasło</label>
+        <label><input type="number" name="rok_urodzenia">Rok urodzenia</label>
+        <label><input type="radio" name="plec" value="m" checked>M</label>
+        <label><input type="radio" name="plec" value="k">K</label>
+        <label><input type="checkbox" name="regulamin" value="1">Akceptuje regulamin</label>
+        <label><input type="checkbox" name="newsletter" value="1">Wyrażam zgodę na otrzymywanei newslettera</label>
+        <label>
+            <select name="fav_bron">
+                <option value="five-seven">FiveSeveN</option>
+                <option value="Desert Eagle">Desert Eagle</option>
+                <option value="PP-Bizon">PP-Bizon</option>
+                <option value="AWP">AWP</option>
+                <option value="MP9e">MP9</option>
+                <option value="AK-47">AK-47</option>
+            </select>Ulubiona broń
+        </label>
+        <label>
+            <select name="fav_mapa[]" multiple>
+                <option value="Dust II">Dust II</option>
+                <option value="Mirage">Mirage</option>
+                <option value="Cache">Cache</option>
+                <option value="Inferno">Inferno</option>
+                <option value="Nuke">Nuke</option>
+                <option value="Train">Train</option>
+            </select>Ulubione mapy  
+        </label>
+        <label><textarea name="opis"></textarea><small>Opisz swoją
+            przygodę z CS:GO, dlaczego wybrałeś akurat nasz klan?
+            </small></label>
+        <input type="submit" value="Zarejestruj się!">
     </form>
 </body>
 </html>
