@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        Oblicz koszt dostawy
+    </h3>
+    <label><input type="checkbox" id="boolZg"> Jestem z Zielonej Góry</label>
+    <p>albo</p>
+    <label>Podaj liczbę kilometrów od Zielonej góry: <input type="number" id="liczbaKm"></label>
+    <button onclick="oblicz()">Oblicz</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+        function oblicz(){
+            let boolZg = document.querySelector('#boolZg').checked
+            
+            let resultContainer = document.querySelector('#result')
+            if(boolZg == true){
+                resultContainer.innerHTML = "Dowieziemy pizze za darmo"
+            } else {
+                let liczbaKm = document.querySelector('#liczbaKm').value
+                let koszt = 2 * liczbaKm
+                resultContainer.innerHTML = "Dowóz będzie cię kosztował " + koszt + " złotych"
+            }
+        }
+    </script>
+</body>
+</html>

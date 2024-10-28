@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Ile będzie kosztowało moje wesele?
+    </h2>
+    <label>Podaj liczbę gości: </label><input type="number" id="goscie">
+    <br>
+    <label><input type="checkbox" id="poprawiny"> Wesele z poprawinami?</label>
+    <br>
+    <button onclick="obliczKoszt()">Oblicz koszt</button>
+    <p id="result"></p>
+
+    <script type="text/javascript">
+        function obliczKoszt(){
+            let liczbaGosci = document.querySelector("#goscie").value
+            let boolPoprawiny = document.querySelector('#poprawiny').checked
+            let koszt = 100 * liczbaGosci
+            if(boolPoprawiny == true){
+                koszt *= 1.3
+            }
+            let resultContainer = document.querySelector('#result')
+            resultContainer.innerHTML = "Koszt Twojego wesela to " + koszt + " złotych"
+            console.log([liczbaGosci, boolPoprawiny])
+        }
+    </script>
+</body>
+</html>
