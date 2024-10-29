@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        Oblicz koszt paliwa 
+    </h3>
+    <label>Rodzaj paliwa (1-benzyna, 2-olej napędowy) <input type="number" id="paliwo"></label>
+    Ile litrów <br>
+    <input type="number" id="ileLitrow">
+    <button onclick="oblicz()">OBLICZ</button>
+    <p id="result"></p>
+    <script>
+        function oblicz() {
+            let rodzajPaliwa = document.querySelector("#paliwo").value
+            let ileLitrow = document.querySelector('#ileLitrow').value
+            let resultContainer = document.querySelector("#result")
+            let koszt = 0
+            switch (rodzajPaliwa) {
+                case 1:
+                    koszt = 4*ileLitrow
+                    break;
+                case 2:
+                    koszt = 3,5*ileLitrow
+                    break;
+
+                default:
+                    koszt = 0
+                    break;
+            }
+            resultContainer.innerHTML = "Koszt paliwa:" + koszt + " zł"
+        }
+    </script>
+</body>
+</html>
