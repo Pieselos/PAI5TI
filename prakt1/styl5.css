@@ -25,8 +25,24 @@ header section{
     margin: 7px;
     border: 1px solid #7DA453;
 }
-.logo{
-    /* Nie ma gimpa :/ */
-    height: 120px;
-    width: 120px;
+.blokKalendarz:hover{
+    background-color: #7DA453;
+    color: white;
+}
+footer{
+    background-color: #7DA453;
+    color: white;
+    padding: 5px;
+
+}
+h5{
+    text-align: center;
+    
+}
+form{
+    padding-top: 50px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap
 }
