@@ -23,7 +23,16 @@
         
     </header>
     <main>
+        <?php
 
+            $connect = new mysqli('localhost','root','','kalendarz');
+            $query = "SELECT dataZadania, wpis FROM zadania WHERE miesiac='sierpien'";
+            $result = $connect->query($query);
+            while($row = $result->fetch_object()){
+                echo "<div class='blokKalendarz'><h5>$row->dataZadania</h5><p>$row->wpis</p></div>";
+            }
+            $connect->close();
+        ?>
     </main>
     <footer>
          <p>Stronę wykonał: Jakub Wójtowicz</p>
