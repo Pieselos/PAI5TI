@@ -3,7 +3,48 @@
 }
 .logo{
     background-color: rgb(162, 117, 87);
+    width: 20%;
+    height: 100px;
 }
 .menu{
     background-color: rgb(162, 117, 87);
+    width: 80%;
+    height: 100px;
+    text-align: right;
 }
+.banerIStopka{
+    background-color: rgb(74, 45, 32);
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+}
+.lewyIPrawy{
+    background-color: rgb(162, 117, 87);
+    color: white;
+    width: 50%;
+    height: 500px;
+}
+h1{
+    letter-spacing: 10px;
+}
+a{
+    color: rgb(65,98,85);
+    padding: 20px;
+    margin: 10px;
+    font-size: 150%;
+    line-height: 100px;
+    border: 1px solid rgb(65, 98, 85);
+
+
+}   
+.przekreslenie{
+    text-decoration: line-through;
+}
+header{
+    display: flex;
+}
+main{
+    display: flex;
+}
+
